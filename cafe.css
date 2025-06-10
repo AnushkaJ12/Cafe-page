@@ -1,0 +1,25 @@
+
+h1{  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:brown;
+    background-color: beige;
+    text-decoration-line:underline;
+    text-decoration-color:brown;
+    
+    
+}
+h2{ font-family:Arial, Helvetica, sans-serif;
+    color:peru;
+    background-color:moccasin;
+}
+table{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: moccasin;
+}
+p{  
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:saddlebrown;
+}
+body{
+    background-color:lemonchiffon;
+    align-items: center;
+    
+}
