@@ -1,91 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Lemon Cafe</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
     <div class="overlay">
       <h1>Welcome to Little Lemon</h1>
-      <p>We serve the richest and cutest coffee in town!</p>
-      <button class="cta">Explore Menu</button>
+      <p>We serve the richest coffee in the city!</p>
+      <a href="#menu" class="btn">Explore Menu</a>
     </div>
   </header>
 
-  <section class="section-icons fade-in">
-    <div class="icon">☕<br>Coffee</div>
-    <div class="icon">🧁<br>Desserts</div>
-    <div class="icon">🍞<br>Bakery</div>
-  </section>
-
-  <section class="menu fade-in">
+  <section id="menu" class="menu-section">
     <h2>Our Special Coffee</h2>
-    <div class="cards">
-      <div class="card hover-zoom">
-        <img src="cappuccino.jpg" alt="Cappuccino" />
+    <div class="card-container">
+      <div class="card">
+        <img src="cappuccino.jpg" alt="Cappuccino">
         <h3>Cappuccino</h3>
         <p>₹250</p>
       </div>
-      <div class="card hover-zoom">
-        <img src="latte.jpg" alt="Latte" />
+      <div class="card">
+        <img src="latte.jpg" alt="Latte">
         <h3>Latte</h3>
         <p>₹230</p>
       </div>
-      <div class="card hover-zoom">
-        <img src="mocha.jpg" alt="Mocha" />
+      <div class="card">
+        <img src="mocha.jpg" alt="Mocha">
         <h3>Mocha</h3>
         <p>₹280</p>
       </div>
     </div>
-  </section>
 
-  <section class="desserts fade-in">
     <h2>Our Special Desserts</h2>
-    <div class="cards">
-      <div class="card hover-zoom">
-        <img src="churros.jpg" alt="Churros" />
+    <div class="card-container">
+      <div class="card">
+        <img src="churros.jpg" alt="Churros">
         <h3>Churros</h3>
-        <p>₹150</p>
+        <p>₹180</p>
       </div>
-      <div class="card hover-zoom">
-        <img src="tiramisu.jpg" alt="Tiramisu" />
+      <div class="card">
+        <img src="tiramisu.jpg" alt="Tiramisu">
         <h3>Tiramisu</h3>
         <p>₹220</p>
       </div>
-      <div class="card hover-zoom">
-        <img src="cookies.jpg" alt="Cookies" />
+      <div class="card">
+        <img src="cookies.jpg" alt="Cookies">
         <h3>Cookies</h3>
-        <p>₹90</p>
+        <p>₹150</p>
       </div>
     </div>
   </section>
 
-  <section class="testimonials fade-in">
+  <section class="reviews">
     <h2>Our Happy Customers</h2>
-    <div class="cards">
-      <div class="testimonial">
-        <p>"Cutest place ever! Loved the ambience and coffee."</p>
-        <span>– Ananya</span>
-      </div>
-      <div class="testimonial">
-        <p>"Aesthetic vibes and warm drinks. Must visit!"</p>
-        <span>– Rishi</span>
-      </div>
-      <div class="testimonial">
-        <p>"Latte art here is adorable. 10/10."</p>
-        <span>– Meera</span>
-      </div>
+    <div class="review">
+      <p>"The best coffee shop in town! Loved the mocha!"</p>
+      <h4>- Anjali S.</h4>
+    </div>
+    <div class="review">
+      <p>"The churros were divine and coffee perfect. Must visit!"</p>
+      <h4>- Rohan M.</h4>
     </div>
   </section>
 
-  <footer class="fade-in">
-    <p>Join us and get 15% off your first order!</p>
-    <input type="email" placeholder="Your email" />
-    <button>Subscribe</button>
+  <section class="contact">
+    <h2>Leave a Review / Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Write your review or message here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Little Lemon Cafe | Follow us on
+      <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">Twitter</a>
+    </p>
   </footer>
 </body>
 </html>
+
