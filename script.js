@@ -1,23 +1,9 @@
-// Toggle theme
-const toggleButton = document.getElementById("theme-toggle");
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    document.querySelector("header").classList.toggle("dark-mode");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
 
-// Show item info based on menu click
-function showInfo(drinkId) {
-    document.querySelectorAll('.item').forEach(section => {
-        section.classList.remove('show');
-    });
-    const selected = document.getElementById(drinkId);
-    if (selected) {
-        selected.classList.add('show');
-        selected.scrollIntoView({ behavior: "smooth" });
-    }
-}
-
-// Initial: show cappuccino section
-window.addEventListener("DOMContentLoaded", () => {
-    showInfo("cappuccino");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thanks for your review! We'll get back to you soon 💛");
+    form.reset();
+  });
 });
