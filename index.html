@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Little Lemon Café</title>
-    <link rel="stylesheet" href="cafe.css">
-    <script defer src="cafe.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Lemon Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Welcome to Little Lemon</h1>
+      <p>We serve the richest and cutest coffee in town!</p>
+      <button class="cta">Explore Menu</button>
+    </div>
+  </header>
 
-    <header>
-        <h1 class="fade-in">Little Lemon Café</h1>
-        <h2 class="fade-in delay">Perfectly Curated Beverages</h2>
-        <button id="theme-toggle">Toggle Theme</button>
-    </header>
+  <section class="section-icons">
+    <div class="icon">☕<br>Coffee</div>
+    <div class="icon">🧁<br>Desserts</div>
+    <div class="icon">🍞<br>Bakery</div>
+  </section>
 
-    <section class="hero">
-        <img src="little.jpg" alt="Little Lemon Cafe" class="main-img slide-in">
-        <div class="gallery">
-            <img src="c7.jpg" alt="Cafe Interior" class="hover-scale">
-            <img src="c11.jpg" alt="Coffee Beans" class="hover-scale">
-            <img src="c10.png" alt="Latte Art" class="hover-scale">
-        </div>
-    </section>
-
-    <section class="menu-section">
-        <h2>Our Menu</h2>
-        <ul class="menu-list">
-            <li onclick="showInfo('cappuccino')">Cappuccino</li>
-            <li onclick="showInfo('latte')">Latte</li>
-            <li onclick="showInfo('mocha')">Mocha</li>
-        </ul>
-    </section>
-
-    <section class="item" id="cappuccino">
+  <section class="menu">
+    <h2>Our Special Coffee</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="c1.png" alt="Cappuccino" />
         <h3>Cappuccino</h3>
-        <div class="item-images">
-            <img src="c1.png" alt="Cappuccino Cup">
-            <img src="c2.jpeg" alt="Cappuccino Beans">
-        </div>
-        <p>Composed of a single, double, or triple espresso shot and hot milk, topped with foamed milk.
-        Cappuccino makes for a perfect evening beverage.</p>
-    </section>
-
-    <section class="item" id="latte">
+        <p>₹250</p>
+      </div>
+      <div class="card">
+        <img src="c5.jpeg" alt="Latte" />
         <h3>Latte</h3>
-        <div class="item-images">
-            <img src="c5.jpeg" alt="Latte Cup">
-            <img src="l.jpeg" alt="Latte Art">
-        </div>
-        <p>Made with one or two shots of espresso, steamed milk, and a thin layer of frothed milk on top.</p>
-    </section>
-
-    <section class="item" id="mocha">
+        <p>₹230</p>
+      </div>
+      <div class="card">
+        <img src="m1.jpeg" alt="Mocha" />
         <h3>Mocha</h3>
-        <div class="item-images">
-            <img src="m1.jpeg" alt="Mocha Cup">
-            <img src="m4.jpeg" alt="Mocha Topping">
-        </div>
-        <p>A delightful blend of espresso, chocolate syrup or powder, and steamed milk.
-        Mocha is chocolatey heaven in a cup.</p>
-    </section>
+        <p>₹280</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="pricing">
-        <h2>Price List</h2>
-        <table>
-            <tr>
-                <th>Drink</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Cappuccino</td>
-                <td>₹250</td>
-            </tr>
-            <tr>
-                <td>Latte</td>
-                <td>₹230</td>
-            </tr>
-            <tr>
-                <td>Mocha</td>
-                <td>₹280</td>
-            </tr>
-        </table>
-    </section>
+  <section class="desserts">
+    <h2>Our Special Desserts</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="dessert1.jpg" alt="Churros" />
+        <h3>Churros</h3>
+        <p>₹150</p>
+      </div>
+      <div class="card">
+        <img src="dessert2.jpg" alt="Tiramisu" />
+        <h3>Tiramisu</h3>
+        <p>₹220</p>
+      </div>
+      <div class="card">
+        <img src="dessert3.jpg" alt="Cookies" />
+        <h3>Cookies</h3>
+        <p>₹90</p>
+      </div>
+    </div>
+  </section>
 
+  <section class="testimonials">
+    <h2>Our Happy Customers</h2>
+    <div class="cards">
+      <div class="testimonial">
+        <p>"Cutest place ever! Loved the ambience and coffee."</p>
+        <span>– Ananya</span>
+      </div>
+      <div class="testimonial">
+        <p>"Aesthetic vibes and warm drinks. Must visit!"</p>
+        <span>– Rishi</span>
+      </div>
+      <div class="testimonial">
+        <p>"Latte art here is adorable. 10/10."</p>
+        <span>– Meera</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Join us and get 15% off your first order!</p>
+    <input type="email" placeholder="Your email" />
+    <button>Subscribe</button>
+  </footer>
 </body>
 </html>
