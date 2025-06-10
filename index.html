@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Little Lemon Café</title>
+    <link rel="stylesheet" href="cafe.css">
+    <script defer src="cafe.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="fade-in">Little Lemon Café</h1>
+        <h2 class="fade-in delay">Perfectly Curated Beverages</h2>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <section class="hero">
+        <img src="little.jpg" alt="Little Lemon Cafe" class="main-img slide-in">
+        <div class="gallery">
+            <img src="c7.jpg" alt="Cafe Interior" class="hover-scale">
+            <img src="c11.jpg" alt="Coffee Beans" class="hover-scale">
+            <img src="c10.png" alt="Latte Art" class="hover-scale">
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <ul class="menu-list">
+            <li onclick="showInfo('cappuccino')">Cappuccino</li>
+            <li onclick="showInfo('latte')">Latte</li>
+            <li onclick="showInfo('mocha')">Mocha</li>
+        </ul>
+    </section>
+
+    <section class="item" id="cappuccino">
+        <h3>Cappuccino</h3>
+        <div class="item-images">
+            <img src="c1.png" alt="Cappuccino Cup">
+            <img src="c2.jpeg" alt="Cappuccino Beans">
+        </div>
+        <p>Composed of a single, double, or triple espresso shot and hot milk, topped with foamed milk.
+        Cappuccino makes for a perfect evening beverage.</p>
+    </section>
+
+    <section class="item" id="latte">
+        <h3>Latte</h3>
+        <div class="item-images">
+            <img src="c5.jpeg" alt="Latte Cup">
+            <img src="l.jpeg" alt="Latte Art">
+        </div>
+        <p>Made with one or two shots of espresso, steamed milk, and a thin layer of frothed milk on top.</p>
+    </section>
+
+    <section class="item" id="mocha">
+        <h3>Mocha</h3>
+        <div class="item-images">
+            <img src="m1.jpeg" alt="Mocha Cup">
+            <img src="m4.jpeg" alt="Mocha Topping">
+        </div>
+        <p>A delightful blend of espresso, chocolate syrup or powder, and steamed milk.
+        Mocha is chocolatey heaven in a cup.</p>
+    </section>
+
+    <section class="pricing">
+        <h2>Price List</h2>
+        <table>
+            <tr>
+                <th>Drink</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Cappuccino</td>
+                <td>₹250</td>
+            </tr>
+            <tr>
+                <td>Latte</td>
+                <td>₹230</td>
+            </tr>
+            <tr>
+                <td>Mocha</td>
+                <td>₹280</td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>
